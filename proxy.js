@@ -9,7 +9,7 @@ const caseSensitiveBatter = {
     firstName: 'John'
 };
 
-const caseInsensitveSettingsTraps = (() => {
+const getCaseInsensitveSettingsTraps = (() => {
     const internalLcStats = [];
 
     return {
@@ -21,14 +21,14 @@ const caseInsensitveSettingsTraps = (() => {
             obj[prop] = value;
         }
     };
-})();
+});
 
-const lateAssignedBatterProxy = new Proxy({}, caseInsensitveSettingsTraps);
+const indirectBatterProxy = new Proxy({...caseSensitiveBatter}, getCaseInsensitveSettingsTraps());
+const directBatterProxy = new Proxy(caseSensitiveBatter, getCaseInsensitveSettingsTraps());
+
+const lateAssignedBatterProxy = new Proxy({}, getCaseInsensitveSettingsTraps());
 lateAssignedBatterProxy.HR = 9;
 lateAssignedBatterProxy.SB = 22;
-
-const indirectBatterProxy = new Proxy({...caseSensitiveBatter}, caseInsensitveSettingsTraps);
-const directBatterProxy = new Proxy(caseSensitiveBatter, caseInsensitveSettingsTraps);
 
 module.exports = { 
     batter, 

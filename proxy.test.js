@@ -20,3 +20,8 @@ test('After-proxy settings are included in lower-case', () => {
     expect(proxyImpl.lateAssignedBatterProxy.hr).toBe(9);
     expect(proxyImpl.lateAssignedBatterProxy.Hr).toBe(9);
 });
+
+test('Direct proxy early assignments are not included', () => {
+    expect(proxyImpl.directBatterProxy.HR).toBe(29);
+    expect(proxyImpl.directBatterProxy.hr).toBeUndefined();
+});
