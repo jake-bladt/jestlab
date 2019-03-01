@@ -25,3 +25,8 @@ test('Direct proxy early assignments are not included', () => {
     expect(proxyImpl.directBatterProxy.HR).toBe(29);
     expect(proxyImpl.directBatterProxy.hr).toBeUndefined();
 });
+
+test('Indirect proxy early assignments are not included', () => {
+    expect(proxyImpl.indirectBatterProxy.HR).toBe(29);
+    expect(proxyImpl.indirectBatterProxy.hr).toBeUndefined();
+});
