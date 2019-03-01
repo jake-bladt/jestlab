@@ -1,1 +1,2 @@
-# A repo specifically for exploring the Jest testing framework for JavaScript
+# Jest Lab
+A repo specifically for exploring the Jest testing framework for JavaScript
