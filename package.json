@@ -1,0 +1,9 @@
+{
+  "name": "jestlab",
+  "version": "1.0.0",
+  "description": "A lab for testing out jest.",
+  "main": "index.js",
+  "repository": "https://www.github.com",
+  "author": "Jake Bladt <jake@jakebladt.com>",
+  "license": "MIT"
+}
