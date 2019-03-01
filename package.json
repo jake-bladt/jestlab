@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://www.github.com",
   "author": "Jake Bladt <jake@jakebladt.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
 }
