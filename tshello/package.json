@@ -1,0 +1,8 @@
+{
+  "name": "tshello",
+  "version": "1.0.0",
+  "description": "Hello world in ts.",
+  "main": "index.js",
+  "author": "Jake",
+  "license": "MIT"
+}
