@@ -6,6 +6,8 @@
   "author": "Jake",
   "license": "MIT",
   "scripts": {
-    "start": "tsc 2.3.ts -w -t es6 & serve"
+    "start": "tsc 2.3.ts -w -t es6 & serve",
+    "build": "tsc 2.3.ts -t es6",
+    "cbuild": "tsc 2.3.ts -t es6 -w"
   }
 }
