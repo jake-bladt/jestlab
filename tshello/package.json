@@ -4,5 +4,8 @@
   "description": "Hello world in ts.",
   "main": "index.js",
   "author": "Jake",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc 2.1.ts -w & serve"
+  }
 }
