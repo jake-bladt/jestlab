@@ -6,6 +6,6 @@
   "author": "Jake",
   "license": "MIT",
   "scripts": {
-    "start": "tsc 2.1.ts -w & serve"
+    "start": "tsc 2.3.ts -w -t es6 & serve"
   }
 }
