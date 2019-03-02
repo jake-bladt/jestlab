@@ -5,7 +5,7 @@ class DOM {
 
     constructor() {
         this._incBtn = this._getDOMElement('#incBtn');
-        this._decBtn = this._getDOMElement('#incBtn');
+        this._decBtn = this._getDOMElement('#decBtn');
         this._counter = this._getDOMElement('#counter');
     }
 
