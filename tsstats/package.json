@@ -4,7 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@types/mocha": "^5.2.6",
     "chai": "^4.2.0",
     "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "test": "mocha --require ts-node/register test/**/*.ts"
   }
 }
