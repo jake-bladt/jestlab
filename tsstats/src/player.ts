@@ -1,4 +1,4 @@
-namespace baseball {
+export namespace baseball {
     export interface IPlayer {
         name: string,
         relativeValue: number
