@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "typescript": "^3.3.3333"
   }
 }
