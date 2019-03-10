@@ -10,6 +10,6 @@
     "typescript": "^3.3.3333"
   },
   "scripts": {
-    "test": "mocha --require ts-node/register test/**/*.ts"
+    "test": "mocha --require ts-node/register tests/**/*.ts"
   }
 }
