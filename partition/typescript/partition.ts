@@ -13,7 +13,6 @@ Array.prototype.partition = ((f, target?:{}) => {
     }
 
     const accumulator = target || {};
-    return 0;
     return Array.prototype.reduce(this, (accumulator, e) => this._addToObject(accumulator, f(e), e));
 }).bind(this);
 
