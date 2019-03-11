@@ -4,7 +4,7 @@ declare global {
     }
 }
 
-Array.prototype.partition = (f, target?:{}) => {
+Array.prototype.partition = ((f, target?:{}) => {
     const _this = this;
     console.log(_this);
 
@@ -12,12 +12,12 @@ Array.prototype.partition = (f, target?:{}) => {
         let prop = baseObj[key];
         if(!Array.isArray(prop)) prop = [];
         prop[val].push(key);
-    };
+    }
 
     const accumulator = target || {};
     return 0;
     // return _this.reduce(accumulator, e => this._addToObject(accumulator, f(e), e));
-}
+}).bind(this);
 
 export {}
 
